@@ -43,6 +43,25 @@ header a, h1, h2, h3, h4, h5, h6 {
     background-color: tomato;
 }
 
+#header-main-login {
+    width: auto;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: tomato;
+}
+
+
+#header-main {
+    width: auto;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: tomato;
+}
+
 #header-main-logo a {
     margin: 10px;
     padding: 10px;
@@ -50,6 +69,12 @@ header a, h1, h2, h3, h4, h5, h6 {
 }
 
 #header-main-page a {
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+#header-main-login a {
     margin: 10px;
     padding: 10px;
     background-color: aqua;
@@ -67,4 +92,46 @@ header a, h1, h2, h3, h4, h5, h6 {
     padding: 5px;
     width: 50px;
     height: 50px;
+}
+
+#header-main-login img {
+    margin: 5px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+#linkLogo, #linkMenu {
+    display: none;
+}
+
+#imgLogo {
+    display: block;
+}
+
+#imgMenu {
+    display: none;
+}
+
+#linkUser {
+    display: block;
+}
+
+#imgUser {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    #imgMenu {
+        display: block;
+    }
+
+    #header-main-logo {
+        width: auto;
+        justify-content: space-between;
+    }
+
+    #header-main-page {
+        display: none;
+    }
 }
