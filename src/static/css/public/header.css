@@ -21,9 +21,9 @@ header>main {
     background-color: transparent;
 }
 
-header a, h1, h2, h3, h4, h5, h6 {
+header * {
     color: rgb(200, 200, 250);
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 #header-main-logo {
