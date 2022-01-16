@@ -3,20 +3,22 @@
 <header>
     <main>
         <div id="header-main-logo">
-            <img id="imgLogo" src="https://i.ibb.co/dpScbFn/zl-bg-w.png" alt="Logo">
+            <img id="imgLogo" onclick="OpenURL('/')" src="https://i.ibb.co/hydH25M/zeloot-white-logo.png" alt="Logo">
 
         </div>
         <div id="header-main">
             <div id="header-main-page">
-                <a href="#">Page</a>
-                <a href="#">Page</a>
-                <a href="#">Page</a>
-                <a href="#">Page</a>
+                <a href="#">Store</a>
+                <a href="#">Games</a>
+                <a href="#">Support</a>
             </div>
             <div id="header-main-login">
+                {% if(user) %}
+                <img id="imgUser" src="{% print(user['uimg']) %}" alt="User">
+                {% else %}
                 <a id="linkUser" href="#">Login</a>
-                <img id="imgUser" src="https://i.ibb.co/dpScbFn/zl-bg-w.png" alt="Logo">
-                <img id="imgMenu" src="https://i.ibb.co/dpScbFn/zl-bg-w.png" alt="Logo">
+                {% endif %}
+                <img id="imgMenu" onclick="HeaderMenu('open')" src="https://i.ibb.co/xhmy5x4/o-open.png" alt="Menu">
             </div>
         </div>
 

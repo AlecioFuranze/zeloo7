@@ -5,7 +5,7 @@ header {
     position: fixed;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(50, 50, 100);
     z-index: 1000;
 }
 
@@ -17,11 +17,11 @@ header>main {
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    background-color: royalblue;
+    background-color: transparent;
 }
 
 header a, h1, h2, h3, h4, h5, h6 {
-    color: white;
+    color: rgb(200, 200, 250);
     overflow: hidden;
 }
 
@@ -31,7 +31,7 @@ header a, h1, h2, h3, h4, h5, h6 {
     display: flex;
     position: relative;
     align-items: center;
-    background-color: tomato;
+    cursor: pointer;
 }
 
 #header-main-page {
@@ -40,7 +40,6 @@ header a, h1, h2, h3, h4, h5, h6 {
     display: flex;
     position: relative;
     align-items: center;
-    background-color: tomato;
 }
 
 #header-main-login {
@@ -49,7 +48,6 @@ header a, h1, h2, h3, h4, h5, h6 {
     display: flex;
     position: relative;
     align-items: center;
-    background-color: tomato;
 }
 
 
@@ -59,32 +57,48 @@ header a, h1, h2, h3, h4, h5, h6 {
     display: flex;
     position: relative;
     align-items: center;
-    background-color: tomato;
 }
 
 #header-main-logo a {
     margin: 10px;
     padding: 10px;
-    background-color: aqua;
+    font-weight: bold;
+    transition: 0.5s ease-in;
+}
+
+#header-main-logo a:hover {
+    text-decoration: underline;
 }
 
 #header-main-page a {
     margin: 10px;
     padding: 10px;
-    background-color: aqua;
+    font-weight: bold;
+    transition: 0.5s ease-in;
+}
+
+#header-main-page a:hover {
+    text-decoration: underline;
 }
 
 #header-main-login a {
     margin: 10px;
     padding: 10px;
-    background-color: aqua;
+    font-weight: bold;
+    transition: 0.5s ease-in;
 }
+
+#header-main-login a:hover {
+    text-decoration: underline;
+}
+
 
 #header-main-logo img {
     margin: 5px;
     padding: 5px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 #header-main-page img {
@@ -92,6 +106,7 @@ header a, h1, h2, h3, h4, h5, h6 {
     padding: 5px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 #header-main-login img {
@@ -99,6 +114,7 @@ header a, h1, h2, h3, h4, h5, h6 {
     padding: 5px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 #linkLogo, #linkMenu {
@@ -119,6 +135,7 @@ header a, h1, h2, h3, h4, h5, h6 {
 
 #imgUser {
     display: block;
+    border-radius: 50%;
 }
 
 @media only screen and (max-width: 600px) {
