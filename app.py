@@ -63,13 +63,13 @@ def google_authorize():
 # facebook login
 @app.route("/login/facebook/")
 def facebook():
-    redirect_uri = url_for("facebook_auth", _external=True)
+    redirect_uri = url_for("facebook_authorize", _external=True)
     return oauth.facebook.authorize_redirect(redirect_uri)
 
 
 # facebook login authorize
-@app.route("/login/facebook/auth/")
-def facebook_auth():
+@app.route("/login/facebook/authorize/")
+def facebook_authorize():
     token = oauth.facebook.authorize_access_token()
     resp = oauth.facebook.get(
         "https://graph.facebook.com/me?fields=id,name,first_name,last_name,email,picture{url}"
