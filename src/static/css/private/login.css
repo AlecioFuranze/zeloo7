@@ -1,10 +1,24 @@
 #login-page {
     width: 100%;
+    padding: 20px;
 }
 
+#login-page h1 {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+
+#login-page p {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+}
+
+
 #login-page a {
-   text-decoration: underline; 
-   text-transform: uppercase;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 #login-main {
@@ -57,4 +71,57 @@
     position: relative;
     text-transform: capitalize;
     color: rgb(200, 200, 250);
+}
+
+@media only screen and (max-width: 400px) {
+
+    .login-item {
+        width: 180px;
+        height: 60px;
+    }
+
+    .login-item>i {
+        width: 50px;
+        height: 50px;
+    }
+
+    .login-item>div {
+        width: 120px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 400px) {
+
+    .login-item {
+        width: 250px;
+        height: 60px;
+    }
+
+    .login-item>i {
+        width: 50px;
+        height: 50px;
+    }
+
+    .login-item>div {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .login-item {
+        width: 180px;
+        height: 60px;
+    }
+
+    .login-item>i {
+        width: 50px;
+        height: 50px;
+    }
+
+    .login-item>div {
+        width: 120px;
+        height: 50px;
+    }
 }
